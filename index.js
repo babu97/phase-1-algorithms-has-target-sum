@@ -1,5 +1,12 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for(let i = 0; i<array.length; i++){
+  for(let j = i+1; j<array.length; i++){
+
+    if(array[i]+array[j] === target) return true;
+  }
+  }
+  return false
 }
 
 /* 
@@ -8,11 +15,22 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
-*/
+
+function hasTargetSum(array, target)
+for let i = o, array.length-1 i++
+for let j = i+1, array.length-1, j++
+
+if array[i] + array[j] = target return true
+end for loop 
+return false
 
 /*
   Add written explanation of your solution here
+  loop through the array using for loop 
+  create a second loop to access the second values of the array
+  compare the sum if its evaluates to target and return true
 */
+
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
